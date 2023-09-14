@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"poppins" sans-serif;
+    border-radius: 20px;
+    
+
+}
+
+.card{
+    padding: 40px;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg , #5fd9f1 , #e151d3);
+}
+
+.form{
+    padding: 100px;
+    margin: 250px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg , #5fd9f1 , #e151d3);
+}
+
+
