@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Student Registration</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="process.php" method="post" id="registrationForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" required><br>
+
+        <label for="rollNo">Roll No/ID:</label>
+        <input type="text" name="rollNo" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" name="confirmPassword" required><br>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" name="contactNumber" required><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("registrationForm").onsubmit = function (event) {
+            const password = document.getElementsByName("password")[0].value;
+            const confirmPassword = document.getElementsByName("confirmPassword")[0].value;
+    
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                event.preventDefault();
+            }
+        };
+    </script>
+</body>
+</html>
